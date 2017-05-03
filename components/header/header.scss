@@ -1,7 +1,11 @@
-header{
+.header {
   display: flex;
+
+  justify-content: space-between;
+
   background-color: #f4ffaf;
 
-  width: 100px;
-  height: 100px;
+  @import "header-title";
+  @import "header-close";
+
 }
