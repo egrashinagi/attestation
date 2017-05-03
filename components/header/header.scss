@@ -3,9 +3,17 @@
 
   justify-content: space-between;
 
-  background-color: #f4ffaf;
+  background-color: #55ffa9;
+
+  padding: 5px;
+  box-shadow: rgba(181, 181, 181, 1);
+  user-select: none;
 
   @import "header-title";
   @import "header-close";
+
+  &__icons{
+    padding: 5px;
+  }
 
 }
