@@ -1,0 +1,19 @@
+{
+  "name": "attestation",
+  "version": "1.0.0",
+  "description": "project for budget21",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egrashinagi/attestation.git"
+  },
+  "author": "Egrashina Galina <egrashina.gi@budget21.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/egrashinagi/attestation/issues"
+  },
+  "homepage": "https://github.com/egrashinagi/attestation#readme"
+}
