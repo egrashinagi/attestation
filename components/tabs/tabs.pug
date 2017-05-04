@@ -12,7 +12,32 @@ md-tabs(md-dynamic-height md-border-bottom)
                     md-radio-button.main-assessmentmain__list-item(value="answer3") По шкалам
                     md-radio-button.main-assessmentmain__list-item(value="answer4") Без оценки
 
-            span.main__title Список возможных ответов
+            md-list
+                md-subheader.md-no-sticky
+                    md-list-item.secondary-button-padding
+                    p.md-title.main__title Список возможных ответов
+                    p.md-subhead Текст ответа
+                    md-button.md-secondary Уфа
+                    md-button.md-secondary Москва
+                    md-button.md-secondary Казань
+                    md-button.md-secondary Актобе
+                    md-button.md-secondary Ижевск
+                    md-chips
+
+                        md-chip Уфа
+                            md-icon close
+
+                        md-chip Москва
+                            md-icon close
+
+                        md-chip Казань
+                            md-icon close
+                        md-chip Актобе
+                            md-icon close
+                        md-chip Ижевск
+                            md-icon close
+
+
+
     md-tab(label="Дополнительно")
-        md-content.md-padding
-            h1 zxc
+        span Дополнительно
