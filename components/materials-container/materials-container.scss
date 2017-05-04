@@ -7,15 +7,22 @@ body{
 .materials-container {
   display: flex;
 
+  padding: 5px;
+
   height: 100%;
   overflow-y: auto;
+
+  background-color: rgba(231, 255, 221, 0.55);
+  box-shadow: #565656;
 
   &__content-table {
     width: 100%;
     height: 100%;
-    border-color: #d7d7d7;
 
+    border-color: #d7d7d7;
     background-color: rgba(236, 232, 164, 0.56);
+    color: #464646;
+    box-shadow: #b5b5b5;
 
     user-select: none;
   }
