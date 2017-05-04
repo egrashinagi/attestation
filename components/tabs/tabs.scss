@@ -1,0 +1,39 @@
+.tabsdemoDynamicHeight,
+  md-content {
+  background-color: transparent !important; }
+.tabsdemoDynamicHeight md-content md-tabs {
+  background: #F6F6F6;
+  border: 1px solid #e1e1e1; }
+.tabsdemoDynamicHeight md-content md-tabs {
+  background: white; }
+.tabsdemoDynamicHeight md-content h1:first-child {
+  margin-top: 0; }
+
+.main{
+  display: flex;
+  flex-direction: column;
+
+  &__title{
+    display: flex;
+    padding: 5px;
+
+    font-weight: normal;
+  }
+}
+.main-assessmentmain{
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  padding: 20px 0 0 0;
+  &__list {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+
+    padding: 20px 0 20px 0;
+  }
+  &__list-item{
+    //display: flex;
+  }
+}
