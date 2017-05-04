@@ -9,9 +9,20 @@
 .tabsdemoDynamicHeight md-content h1:first-child {
   margin-top: 0; }
 
+html,
+body{
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
 .main{
   display: flex;
   flex-direction: column;
+
+  height: 100%;
+  overflow-y: auto;
 
   &__title{
     display: flex;
@@ -25,6 +36,8 @@
   flex-direction: column;
   flex-shrink: 0;
 
+  overflow-y: auto;
+
   padding: 20px 0 0 0;
   &__list {
     display: flex;
@@ -34,6 +47,10 @@
     padding: 20px 0 20px 0;
   }
   &__list-item{
-
+    display: flex;
+  }
+  &__list_type{
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -13,8 +13,6 @@ md-tabs(md-dynamic-height md-border-bottom)
                     md-radio-button.main-assessmentmain__list-item(value="answer4") Без оценки
 
             md-list
-                md-subheader.md-no-sticky
-                    md-list-item.secondary-button-padding
                     p.md-title.main__title Список возможных ответов
                     p.md-subhead Текст ответа
                     md-button.md-secondary Уфа
@@ -36,8 +34,19 @@ md-tabs(md-dynamic-height md-border-bottom)
                             md-icon close
                         md-chip Ижевск
                             md-icon close
-
-
+         md-button.md-primary.md-raised Отменить
+         md-button.md-raised Сохранить
 
     md-tab(label="Дополнительно")
-        span Дополнительно
+        span.md-subhead Тип отметки
+            p
+                md-radio-group.main-assessmentmain__list_type(ng-model="data.group1")
+                    md-radio-button.md-primary.main-assessmentmain__list-item(value="answer1") Флаг
+                    md-radio-button.main-assessmentmain__list-item(value="answer2") Кружок
+
+        span.md-subhead Изображение
+            p
+                input(type='file' value="upload")
+
+        md-button.md-raised Отменить
+        md-button.md-primary Сохранить
