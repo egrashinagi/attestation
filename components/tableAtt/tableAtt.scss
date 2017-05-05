@@ -4,7 +4,7 @@ body{
   height: 100%;
 }
 
-.materials-container {
+.table {
   display: flex;
 
   padding: 5px;
@@ -15,7 +15,7 @@ body{
   background-color: rgba(231, 255, 221, 0.55);
   box-shadow: #565656;
 
-  &__content-table {
+  &__content {
     width: 100%;
     height: 100%;
 
