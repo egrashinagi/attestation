@@ -1,0 +1,11 @@
+// общие
+html,
+body {
+
+}
+
+// библиотечные
+@import "../node_modules/angular-material/angular-material.scss";
+
+// компоненты
+@import "components/header/header";
