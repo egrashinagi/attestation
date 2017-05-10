@@ -1,0 +1,41 @@
+html,
+body{
+  display: flex;
+  height: 100%;
+}
+
+.table-att{
+  display: flex;
+
+  padding: 5px;
+
+  height: 100%;
+  overflow-y: auto;
+
+  background-color: rgba(231, 255, 221, 0.55);
+  box-shadow: #565656;
+
+  &__content {
+    width: 100%;
+    height: 100%;
+
+    border-color: #d7d7d7;
+    background-color: rgba(236, 232, 164, 0.56);
+    color: #464646;
+    box-shadow: #b5b5b5;
+
+    user-select: none;
+  }
+}
+
+.row_green{
+  background-color: #49dea7;
+}
+tr:hover{
+  background-color: rgba(73, 222, 167, 0.92);
+}
+tr:active {
+  background-color: rgba(222, 159, 189, 0.67);
+}
+
+
