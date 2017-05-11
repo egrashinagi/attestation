@@ -1,1 +1,1 @@
-angular.module( 'MyApp', [ 'ngMaterial' ]);
+angular.module('MyApp', ['ngMaterial']);
