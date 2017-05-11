@@ -1,3 +1,28 @@
-md-tab(label="Главное")
-    h1 Test
-        p Lorem ipsum dolor sit amet
+md-tab(label="Главное" flex layout="column" )
+    .tabs__item
+        md-input-container
+            input(placeholder='Текст задания', value='Какой город на указателе?')
+
+        md-input-container
+            input.tabs-task-text__input(placeholder='Описание', value='Подробное описание задания')
+        span Варианты ответов:
+        md-content
+            md-chips.md-chips
+                md-chip Москва
+                    md-icon
+                        i.material-icons close
+                md-chip Ижевск
+                    md-icon
+                        i.material-icons close
+                md-chip Урюпинск
+                    md-icon
+                        i.material-icons close
+                md-chip Актобе
+                    md-icon
+                        i.material-icons close
+                md-chip Новороссийск
+                    md-icon
+                        i.material-icons close
+
+        span  Загрузить файл:
+        input.tabs-task-text__input(type='file', value='Загрузить файл')

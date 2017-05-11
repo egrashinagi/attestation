@@ -1,0 +1,33 @@
+.scale-questions-list
+    table.scale-questions-list__table(border="1" cellpadding="5" cellspacing="5")
+
+        thead.scale-questions-list__thead
+            tr
+                th Наименование
+                th Время
+                th Описание
+                th теги
+                th Дополнительно
+
+        tbody.scale-questions-list__tbody
+            - var x = 0;
+            while (x++ < 50)
+                tr.scale-questions-list__item
+                    td Практическая часть
+                    td 10:00
+                    td автобус справа
+                    td тест; автобус; справа;водитель; вопрос;
+                    td Примечение:отсувствует
+                tr.scale-questions-list__item
+                    td Теоретическая часть
+                    td 10:00
+                    td автобус справа
+                    td тест; автобус; справа;водитель; вопрос;
+                    td Примечение:отсувствует
+
+                tr.scale-questions-list__item
+                    td Тематическая часть
+                    td 10:00
+                    td автобус справа
+                    td тест; автобус; справа;водитель; вопрос;
+                    td Примечение:отсувствует
