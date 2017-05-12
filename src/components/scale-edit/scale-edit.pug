@@ -1,13 +1,53 @@
 .scale-edit
-    md-input-container
-        input(placeholder='Наименование', value='5-я шкала оценивания')
+    .scale-edit__list
+        md-input-container
+            input(placeholder='Наименование', value='5-я шкала оценивания')
 
-    md-input-container
-        input(placeholder='Описание', value='5-я шкала оценивания. Подробное описание задания.')
+        md-input-container
+            input(placeholder='Описание', value='5-я шкала оценивания. Подробное описание задания.')
 
-    md-tabs.tabs(flex layout="column" layout-fill)
-        md-tab(label="Наименование" flex layout="column" )
-        md-tab(label="Значение" flex layout="column" )
-        md-tab(label="Нижняя граница, %" flex layout="column")
-        md-tab(label="Тест пройден" flex layout="column" )
+        table.scale-edit__list-table(border="1" cellpadding="3" cellspacing="1")
+                thead(bgcolor='#fcd6d6')
+                    tr
+                        th Наименование
+                        th Значение
+                        th Нижняя граница, %
+                        th Тест пройден
+                tbody(bgcolor='#EAFDFF')
 
+                    tr
+                            td Плохо
+                            td 20
+                            td 20
+                            td
+                                md-checkbox.md-warn
+                    tr
+                            td Удовлетворительно
+                            td 40
+                            td 40
+                            td
+                                md-checkbox.md-warn
+                    tr
+                            td Хорошо
+                            td 60
+                            td 60
+                            td
+                                md-checkbox.md-warn
+                    tr
+                            td Отлично
+                            td 80
+                            td 80
+                            td
+                                md-checkbox.md-warn
+
+
+        //md-tabs.tabs(flex layout="column" layout-fill)
+        //
+        //    include scale-edit-tabs-name
+        //    include scale-edit-tabs-value
+        //    include scale-edit-tabs-bottom-line
+        //    include scale-edit-tabs-done
+
+        .scale-edit__tabs
+            md-button.md-primary.md-raised.md-warn(flex="10" ng-click="showListBottomSheet()") Отменить
+            md-button.md-primary.md-raised(flex="10" ng-click="showListBottomSheet()") Сохранить
