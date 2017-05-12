@@ -38,11 +38,13 @@
     background-color: rgba(244, 255, 230, 0.65);
   }
 
-  &__item:hover {
-    background-color: #c1f6e4;
-  }
-  &__item:active {
-    background-color: #ffa191;
+  &__item {
+    &:hover {
+      background-color: #c1f6e4;
+    }
+    &:active {
+      background-color: #ffa191;
+    }
   }
 }
 
