@@ -19,17 +19,18 @@
   }
 
   &__thead {
-    background-color: #b7de63;
+    background-color: #dea9d4;
   }
 
   &__tbody {
-    background-color: #fdffe1;
+    background-color: #e6ffd3;
+    cursor: pointer;
   }
 
   &__item:hover {
-    background-color: #f6b564;
+    background-color: #ccb2f6;
   }
   &__item:active {
-    background-color: #47de15;
+    background-color: #ffa191;
   }
 }
