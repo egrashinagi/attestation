@@ -1,3 +1,13 @@
-//
-   Created by egrashina.gi on 12.05.17.
+.scale-edit
+    md-input-container
+        input(placeholder='Наименование', value='5-я шкала оценивания')
+
+    md-input-container
+        input(placeholder='Описание', value='5-я шкала оценивания. Подробное описание задания.')
+
+    md-tabs.tabs(flex layout="column" layout-fill)
+        md-tab(label="Наименование" flex layout="column" )
+        md-tab(label="Значение" flex layout="column" )
+        md-tab(label="Нижняя граница, %" flex layout="column")
+        md-tab(label="Тест пройден" flex layout="column" )
 
