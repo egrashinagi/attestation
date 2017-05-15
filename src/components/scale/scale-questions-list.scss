@@ -27,10 +27,14 @@
     cursor: pointer;
   }
 
-  &__item:hover {
-    background-color: #ccb2f6;
-  }
-  &__item:active {
-    background-color: #ffa191;
+  &__table-row {
+
+    &:hover {
+      background-color: #ccb2f6;
+    }
+
+    &:active {
+      background-color: #ffa191;
+    }
   }
 }
