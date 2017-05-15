@@ -24,8 +24,8 @@ md-tab(label="Главное" flex layout="column" )
                     md-icon
                         i.material-icons close
 
-        span  Загрузить файл:
-        input.tabs-task-text__input(type='file', value='Загрузить файл')
+
+        include file-uploader
 
         .tabs__item-buttons
             md-button.md-primary.md-raised.md-warn(flex="10" ng-click="showListBottomSheet()") Отменить
