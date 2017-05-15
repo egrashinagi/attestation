@@ -1,3 +1,7 @@
 md-tabs.tabs(flex layout="column" layout-fill)
     include tab-common
     include tab-other
+
+.tabs__item-buttons
+    md-button.md-primary.md-raised.md-warn(flex="10" ng-click="showListBottomSheet()") Отменить
+    md-button.md-primary.md-raised(flex="10" ng-click="showListBottomSheet()") Сохранить
