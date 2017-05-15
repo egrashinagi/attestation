@@ -1,17 +1,20 @@
 .tabs {
 
   &__item{
-
     display: flex;
+
+    height: 100%;
+
     flex-direction: column;
     flex-shrink: 0;
-    height: 100%;
 
     padding: 10px;
   }
   &__item-buttons{
     display: flex;
+
     justify-content: space-between;
+
     padding: 50px 0 50px 0;
   }
 
