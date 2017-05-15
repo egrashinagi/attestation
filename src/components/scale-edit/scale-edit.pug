@@ -7,7 +7,10 @@
             input(placeholder='Описание', value='5-я шкала оценивания. Подробное описание задания.')
 
         table.scale-edit__list-table(border="1" cellpadding="3" cellspacing="3")
-            caption(align='left') Оценивание:
+
+            .scale-edit__list-table-title
+                span Оценивание:
+
             thead(bgcolor='#fcd6d6')
                 tr
                     th Наименование
