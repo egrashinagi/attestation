@@ -26,6 +26,14 @@
 
     font-weight: bold;
   }
+  
+  &__thead {
+    background-color: #fcd6d6;
+  }
+  
+  &__tbody {
+    background-color: #EAFDFF;
+  }
 
   &__tabs {
     display: flex;

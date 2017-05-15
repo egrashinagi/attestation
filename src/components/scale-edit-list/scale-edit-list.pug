@@ -10,14 +10,14 @@
         .scale-edit-list__table-title
             span Оценивание:
 
-        thead.scale-edit-list__thead(bgcolor='#fcd6d6')
+        thead.scale-edit-list__thead
             tr
                 th Наименование
                 th Значение
                 th Нижняя граница, %
                 th Тест пройден
 
-        tbody.scale-edit-list__tbody(bgcolor='#EAFDFF')
+        tbody.scale-edit-list__tbody
 
             tr.scale-edit-list__row
                 td.scale-edit-list__cell Очень плохо
@@ -25,7 +25,6 @@
                 td.scale-edit-list__cell 0
                 td.scale-edit-list__cell(align='center')
                         md-checkbox.md-warn
-
             tr.scale-edit-list__row
                 td.scale-edit-list__cell Плохо
                 td.scale-edit-list__cell 20
@@ -50,6 +49,7 @@
                 td.scale-edit-list__cell 80
                 td.scale-edit-list__cell(align='center')
                         md-checkbox.md-warn
+
 .scale-edit-list__tabs
     md-button.md-primary.md-raised.md-warn(flex="10" ng-click="showListBottomSheet()") Отменить
     md-button.md-primary.md-raised(flex="10" ng-click="showListBottomSheet()") Сохранить
