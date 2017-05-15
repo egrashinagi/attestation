@@ -38,3 +38,40 @@
     }
   }
 }
+
+.footer {
+  display: flex;
+
+  justify-content: space-between;
+  flex-shrink: 0;
+
+  background-color: #9efff8;
+
+  padding: 5px;
+
+  box-shadow: rgba(181, 181, 181, 1);
+
+  user-select: none;
+
+  &__title {
+    display: flex;
+
+    align-items: center;
+
+    color: #565656;
+
+    font-weight: normal;
+    font-size: 20px;
+  }
+
+  &__close {
+    display: flex;
+
+    align-items: center;
+  }
+
+  &__icons {
+    padding: 5px;
+  }
+
+}
