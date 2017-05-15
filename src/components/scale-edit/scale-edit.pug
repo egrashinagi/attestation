@@ -6,47 +6,48 @@
         md-input-container
             input(placeholder='Описание', value='5-я шкала оценивания. Подробное описание задания.')
 
-        table.scale-edit__list-table(border="1" cellpadding="3" cellspacing="1")
-                thead(bgcolor='#fcd6d6')
-                    tr
-                        th Наименование
-                        th Значение
-                        th Нижняя граница, %
-                        th Тест пройден
-                tbody(bgcolor='#EAFDFF')
+        table.scale-edit__list-table(border="1" cellpadding="3" cellspacing="3")
+            caption(align='left') Оценивание:
+            thead(bgcolor='#fcd6d6')
+                tr
+                    th Наименование
+                    th Значение
+                    th Нижняя граница, %
+                    th Тест пройден
 
-                    tr
-                            td Плохо
-                            td 20
-                            td 20
-                            td
-                                md-checkbox.md-warn
-                    tr
-                            td Удовлетворительно
-                            td 40
-                            td 40
-                            td
-                                md-checkbox.md-warn
-                    tr
-                            td Хорошо
-                            td 60
-                            td 60
-                            td
-                                md-checkbox.md-warn
-                    tr
-                            td Отлично
-                            td 80
-                            td 80
-                            td
-                                md-checkbox.md-warn
-        //md-input-container
-        //     input(placeholder='Наименование', value='Очень плохо')
-        //md-input-container
-        //     input(placeholder='Значение', value='0')
-        //md-input-container
-        //     input(placeholder='Нижняя граница', value='0.00')
-        //md-input-container
-        //     md-checkbox Тест пройден
+            tbody(bgcolor='#EAFDFF')
+
+                tr
+                    td Очень плохо
+                    td 0
+                    td 0
+                    td
+                        md-checkbox.md-warn
+
+                tr
+                    td Плохо
+                    td 20
+                    td 20
+                    td
+                        md-checkbox.md-warn
+                tr
+                    td Удовлетворительно
+                    td 40
+                    td 40
+                    td
+                        md-checkbox.md-warn
+                tr
+                    td Хорошо
+                    td 60
+                    td 60
+                    td
+                        md-checkbox.md-warn
+                tr
+                    td Отлично
+                    td 80
+                    td 80
+                    td
+                        md-checkbox.md-warn
 
         .scale-edit__tabs
             md-button.md-primary.md-raised.md-warn(flex="10" ng-click="showListBottomSheet()") Отменить
