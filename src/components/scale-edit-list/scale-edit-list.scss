@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
 
-  height: 100%;
+  height: 500px;
+  width: 700px;
 
   overflow-y: auto;
 
@@ -18,7 +19,7 @@
     border-color: #e1e1e1;
     box-shadow: #b5b5b5;
 
-    padding: 20px 10px 20px 10px;
+    padding: 10px 5px 10px 5px;
   }
 
   &__table-title {
@@ -38,7 +39,9 @@
   &__tabs {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0 20px 0;
+    flex-shrink: 0;
+
+    padding: 10px 0 10px 0;
   }
 
   &__cell{
