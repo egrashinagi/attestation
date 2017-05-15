@@ -1,4 +1,4 @@
-.scale-edit {
+.scale-edit-list {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -20,7 +20,7 @@
     box-shadow: #9E9E9E;
   }
 
-  &__list-table {
+  &__table {
     width: 100%;
 
     user-select: none;
@@ -30,10 +30,23 @@
     padding: 50px 10px 50px 10px;
   }
 
-  &__list-table-title {
+  &__table-title {
     padding: 20px 0 20px 0;
 
     font-weight: bold;
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 50px 0;
+  }
+
+  .scale-edit-list__cell{
+    padding-top: 10px;
+
+    text-align: center;
+    vertical-align: middle;
   }
 
   &__thead {
@@ -44,7 +57,7 @@
     background-color: rgba(244, 255, 230, 0.65);
   }
 
-  &__item {
+  &__row {
     &:hover {
       background-color: #c1f6e4;
     }
@@ -52,18 +65,4 @@
       background-color: #ffa191;
     }
   }
-}
-
-.scale-edit__tabs {
-  display: flex;
-  justify-content: space-between;
-  padding: 50px 0 50px 0;
-}
-
-.scale-edit__change-assessment {
-  display: flex;
-}
-
-.scale-edit__change-assessment-title {
-  padding: 20px 0 20px 0;
 }

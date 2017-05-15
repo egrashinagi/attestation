@@ -1,0 +1,56 @@
+.scale-edit-list
+    md-input-container
+        input(placeholder='Наименование', value='5-я шкала оценивания')
+
+    md-input-container
+        input(placeholder='Описание', value='5-я шкала оценивания. Подробное описание задания.')
+
+    table.scale-edit-list__table(border="1" cellpadding="3" cellspacing="3")
+
+        .scale-edit-list__table-title
+            span Оценивание:
+
+        thead.scale-edit-list__thead(bgcolor='#fcd6d6')
+            tr.scale-edit-list__row
+                th.scale-edit-list__cell Наименование
+                th.scale-edit-list__cell Значение
+                th.scale-edit-list__cell Нижняя граница, %
+                th.scale-edit-list__cell Тест пройден
+
+        tbody.scale-edit-list__tbody(bgcolor='#EAFDFF')
+
+            tr.scale-edit-list__row
+                td.scale-edit-list__cell Очень плохо
+                td.scale-edit-list__cell 0
+                td.scale-edit-list__cell 0
+                td.scale-edit-list__cell(align='center')
+                        md-checkbox.md-warn
+
+            tr.scale-edit-list__row
+                td.scale-edit-list__cell Плохо
+                td.scale-edit-list__cell 20
+                td.scale-edit-list__cell 20
+                td.scale-edit-list__cell(align='center')
+                        md-checkbox.md-warn
+            tr.scale-edit-list__row
+                td.scale-edit-list__cell Удовлетворительно
+                td.scale-edit-list__cell 40
+                td.scale-edit-list__cell 40
+                td.scale-edit-list__cell(align='center')
+                        md-checkbox.md-warn
+            tr.scale-edit-list__row
+                td.scale-edit-list__cell Хорошо
+                td.scale-edit-list__cell 60
+                td.scale-edit-list__cell 60
+                td.scale-edit-list__cell(align='center')
+                        md-checkbox.md-warn
+            tr.scale-edit-list__row
+                td.scale-edit-list__cell Отлично
+                td.scale-edit-list__cell 80
+                td.scale-edit-list__cell 80
+                td.scale-edit-list__cell(align='center')
+                        md-checkbox.md-warn
+
+    .scale-edit-list__tabs
+        md-button.md-primary.md-raised.md-warn(flex="10" ng-click="showListBottomSheet()") Отменить
+        md-button.md-primary.md-raised(flex="10" ng-click="showListBottomSheet()") Сохранить
