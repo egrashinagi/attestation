@@ -7,30 +7,69 @@
                 th Описание
                 th теги
                 th Дополнительно
+                th Удалить
 
         tbody.scale-questions-list__tbody
+
+            tr
+                td
+                    md-input-container
+                        input(placeholder='Наименование')
+                td
+                    md-input-container
+                        input(placeholder='Описание')
+                td
+                    md-input-container
+                        input(placeholder='Теги')
+                td
+                    md-input-container
+                        input(placeholder='Дополнительно')
+
+                td
+                    .footer__close
+                        md-button.md-fab.md-mini
+                            md-icon add
             - var x = 0;
-            while (x++ < 50)
+            while (x++ < 25)
+
                 tr.scale-questions-list__table-row
+
                     td.scale-questions-list__table-cell 5-я шкала оценивания
                     td.scale-questions-list__table-cell 5-я шкала оценивания. Подробное описание задания.
                     td.scale-questions-list__table-cell тест; автобус; справа;водитель; вопрос;
                     td.scale-questions-list__table-cell Примечение:отсувствует
-                tr.scale-questions-list__table-row
-                    td.scale-questions-list__table-cell Теоретическая часть
-                    td.scale-questions-list__table-cell Теоретическая часть. Подробное описание задания.
-                    td.scale-questions-list__table-cell тест; автобус; справа; водитель; вопрос;
-                    td.scale-questions-list__table-cell Примечение:отсувствует
-                tr.scale-questions-list__table-row
-                    td.scale-questions-list__table-cell Тематическая часть
-                    td.scale-questions-list__table-cell Тематическая часть. Подробное описание задания.
-                    td.scale-questions-list__table-cell тест; автобус; справа;водитель; вопрос;
-                    td.scale-questions-list__table-cell Примечение:отсувствует
+                    td
+                        button.md-icon-button.md-button.md-fab.md-mini
+                            i.material-icons  delete_forever
+            tr
+                td
+                    md-input-container
+                        input(placeholder='Наименование')
+                td
+                    md-input-container
+                        input(placeholder='Описание')
+                td
+                    md-input-container
+                        input(placeholder='Теги')
+                td
+                    md-input-container
+                        input(placeholder='Дополнительно')
+                td
+                    .footer__close
+                        md-button.md-fab.md-mini
+                            md-icon add
 
 //эксперимент с футером
 .footer
-    md-button
-        span.footer__title Сохранить настройки
-    .footer__close
-        md-button.md-fab.md-mini
-            md-icon close
+    tr
+        td
+            input(placeholder='Наименование')
+        td
+            input(placeholder='Описание')
+        td
+            input(placeholder='Теги')
+        td
+            input(placeholder='Дополнительно' height='2px')
+        .footer__close
+            button.md-icon-button.md-ink-ripple.md-button
+                i.material-icons add
