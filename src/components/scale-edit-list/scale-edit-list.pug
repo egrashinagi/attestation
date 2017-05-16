@@ -80,8 +80,20 @@
                     md-input-container
                         input(placeholder='Значение')
                 td(align='center')
-                    md-input-container
-                        input(placeholder='Нижняя граница,%')
+                        md-select(ng-model="size")
+                            md-option 0
+                            md-option 10
+                            md-option 20
+                            md-option 30
+                            md-option 40
+                            md-option 50
+                            md-option 60
+                            md-option 70
+                            md-option 80
+                            md-option 90
+                            md-option 100
+
+
                 td.scale-edit-list__cell(align='center')
                     md-checkbox.md-warn
                 td(align='center' width='8%')
