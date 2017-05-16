@@ -16,6 +16,7 @@
                 th Значение
                 th Нижняя граница, %
                 th Тест пройден
+                th Добавить/удалить оценку
 
         tbody.scale-edit-list__tbody
 
@@ -25,31 +26,69 @@
                 td.scale-edit-list__cell 0
                 td.scale-edit-list__cell(align='center')
                         md-checkbox.md-warn
+                td(align='center')
+                    button.md-icon-button.md-button.md-fab.md-mini
+                        i.material-icons  delete_forever
+
             tr.scale-edit-list__row
                 td.scale-edit-list__cell Плохо
                 td.scale-edit-list__cell 20
                 td.scale-edit-list__cell 20
                 td.scale-edit-list__cell(align='center')
                         md-checkbox.md-warn
+                td(align='center')
+                    button.md-icon-button.md-button.md-fab.md-mini
+                        i.material-icons  delete_forever
+
             tr.scale-edit-list__row
                 td.scale-edit-list__cell Удовлетворительно
                 td.scale-edit-list__cell 40
                 td.scale-edit-list__cell 40
                 td.scale-edit-list__cell(align='center')
                         md-checkbox.md-warn
+
+                td(align='center')
+                    button.md-icon-button.md-button.md-fab.md-mini
+                        i.material-icons  delete_forever
+
             tr.scale-edit-list__row
                 td.scale-edit-list__cell Хорошо
                 td.scale-edit-list__cell 60
                 td.scale-edit-list__cell 60
                 td.scale-edit-list__cell(align='center')
                         md-checkbox.md-warn
+                td(align='center')
+                    button.md-icon-button.md-button.md-fab.md-mini
+                        i.material-icons  delete_forever
+
             tr.scale-edit-list__row
                 td.scale-edit-list__cell Отлично
                 td.scale-edit-list__cell 80
                 td.scale-edit-list__cell 80
                 td.scale-edit-list__cell(align='center')
                         md-checkbox.md-warn
+                td(align='center')
+                    button.md-icon-button.md-button.md-fab.md-mini
+                        i.material-icons  delete_forever
 
+
+            tr
+                td(align='center')
+                    md-input-container
+                        input(placeholder='Наименование')
+                td(align='center')
+                    md-input-container
+                        input(placeholder='Значение')
+                td(align='center')
+                    md-input-container
+                        input(placeholder='Нижняя граница,%')
+                td(align='center')
+                    md-input-container
+                        input(placeholder='Тест пройден')
+                td(align='center' width='8%')
+                    .footer__add
+                        md-button.md-fab.md-mini
+                            md-icon add
     .scale-edit-list__tabs
         md-button.md-primary.md-raised.md-warn(flex="20" ng-click="showListBottomSheet()") Отменить
         md-button.md-primary.md-raised(flex="20" ng-click="showListBottomSheet()") Сохранить
