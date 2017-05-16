@@ -50,19 +50,19 @@
   }
 
   &__thead {
-    background-color: #96c4ff;
+    background-color: rgba(145, 185, 255, 0.67);
   }
 
   &__tbody {
-    background-color: rgba(244, 255, 230, 0.65);
+    background-color: #f9fff9;
   }
 
   &__row {
     &:hover {
-      background-color: #def697;
+      background-color: rgb(217, 238, 255);
     }
     &:active {
-      background-color: #ffa191;
+      background-color: rgba(255, 210, 193, 0.67);
     }
   }
 }

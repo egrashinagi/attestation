@@ -19,22 +19,22 @@
   }
 
   &__thead {
-    background-color: #dea9d4;
+    background-color: rgba(145, 185, 255, 0.67);
   }
 
   &__tbody {
-    background-color: #e6ffd3;
+    background-color: #f9fff9;
 
     cursor: pointer;
   }
 
   &__table-row {
     &:hover {
-      background-color: #ccb2f6;
+      background-color: rgb(217, 238, 255);
     }
 
     &:active {
-      background-color: #ffa191;
+      background-color: rgba(255, 210, 193, 0.67);
     }
   }
 }
@@ -45,7 +45,7 @@
   justify-content: space-between;
   flex-shrink: 0;
 
-  background-color: #9efff8;
+  background-color: #70b7ff;
 
   padding: 5px;
 
