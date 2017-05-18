@@ -4,7 +4,7 @@
 
   overflow-y: auto;
 
-  color: #404040;
+  //color: #404040;
 
   padding: 5px;
   box-shadow: #9E9E9E;
@@ -13,7 +13,7 @@
     width: 100%;
 
     user-select: none;
-    border-color: #e1e1e1;
+    //border-color: #e1e1e1;
     box-shadow: #b5b5b5;
 
     padding: 10px 5px 10px 5px;
@@ -26,11 +26,11 @@
   }
   
   &__thead {
-    background-color: #fcd6d6;
+    //background-color: #fcd6d6;
   }
   
   &__tbody {
-    background-color: #EAFDFF;
+    //background-color: #EAFDFF;
     overflow-y: auto;
   }
 
@@ -50,19 +50,19 @@
   }
 
   &__thead {
-    background-color: rgba(145, 185, 255, 0.67);
+    //background-color: rgba(145, 185, 255, 0.67);
   }
 
   &__tbody {
-    background-color: #f9fff9;
+    //background-color: #f9fff9;
   }
 
   &__row {
     &:hover {
-      background-color: rgb(217, 238, 255);
+      //background-color: rgb(217, 238, 255);
     }
     &:active {
-      background-color: rgba(255, 210, 193, 0.67);
+      //background-color: rgba(255, 210, 193, 0.67);
     }
   }
 }
