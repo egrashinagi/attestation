@@ -1,12 +1,11 @@
 .text-questions-list {
   display: flex;
-
-  width: 100%;
-  height: 100%;
+  flex-direction: column;
 
   overflow-y: auto;
 
-  //color: #3b3b3b;
+  padding: 5px;
+  box-shadow: #9E9E9E;
 
   &__table {
     width: 100%;
@@ -14,24 +13,7 @@
 
     user-select: none;
     box-shadow: #9E9E9E;
-    //border-color: #e1e1e1;
-  }
-  
-  &__table-row {
-    &:hover {
-      //background-color: #f6b564;
-    }
-
-    &:active {
-      //background-color: #47de15;
-    }
   }
 
-  &__thead {
-    //background-color: #b7de63;
-  }
 
-  &__tbody {
-    //background-color: #fdffe1;
-  }
 }
