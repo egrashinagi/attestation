@@ -16,6 +16,22 @@ body {
   height: 100%;
 
   overflow-y: auto;
+
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.75);
+}
+
+.page-container2 {
+  display: flex;
+  flex-direction: column;
+
+  padding: 15px;
+  margin: 15px;
+
+  height: 100%;
+
+  overflow-y: auto;
+
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.75);
 }
 
 // библиотечные
