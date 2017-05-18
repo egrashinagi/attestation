@@ -26,6 +26,8 @@
         height: 50px;
 
         padding: 5px 5px;
+
+        box-shadow: 1px 1px 10px 0 rgba(200, 200, 200, 0.59);
       }
     }
   }
@@ -47,7 +49,7 @@
         }
 
         md-select {
-          margin-top: 0px;
+          margin-top: 0;
         }
       }
     }
