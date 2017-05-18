@@ -1,6 +1,7 @@
-md-tabs.tabs(flex layout="column" layout-fill)
-    include tab-common
-    include tab-other
+.page-container.page-container_margined
+    md-tabs.tabs(flex layout="column" layout-fill)
+        include tab-common
+        include tab-other
 
 .tabs__item-buttons
     md-button.md-primary.md-raised.md-warn(ng-click="showListBottomSheet()") Отменить
