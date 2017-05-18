@@ -13,16 +13,14 @@
 
   }
 
-  &__caption {
+  caption {
     padding: 20px 0 20px 0;
 
     font-weight: bold;
     text-align: left;
   }
 
-  &__thead {
-    //background-color: #fcd6d6;
-
+  thead {
     tr {
       th {
         height: 50px;
@@ -32,8 +30,26 @@
     }
   }
 
-  &__tbody {
+  tbody {
+    tr {
+      td {
+        padding: 5px;
 
+        text-align: center;
+
+        &.left {
+          text-align: left;
+        }
+
+        md-checkbox {
+          margin-top: 8px;
+          margin-bottom: 0;
+        }
+
+        md-select {
+          margin-top: 0px;
+        }
+      }
+    }
   }
-
 }
