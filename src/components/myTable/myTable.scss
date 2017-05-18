@@ -1,0 +1,39 @@
+.my-table {
+
+  box-sizing: content-box;
+  width: 100%;
+
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.75);
+
+  padding: 10px;
+  margin: 0 auto;
+
+  tr {
+    padding: 0 5px;
+
+  }
+
+  &__caption {
+    padding: 20px 0 20px 0;
+
+    font-weight: bold;
+    text-align: left;
+  }
+
+  &__thead {
+    //background-color: #fcd6d6;
+
+    tr {
+      th {
+        height: 50px;
+
+        padding: 5px 5px;
+      }
+    }
+  }
+
+  &__tbody {
+
+  }
+
+}
