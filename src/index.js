@@ -8,7 +8,7 @@ angular
             .backgroundPalette('blue-grey')
     })
     .controller('myChips', function () {
-        this.myItems = ['Москва', 'Питер', 'Балашиха'];
+        this.myItems = ['Москва', 'Санкт-Петербург', 'Балашиха', 'Самара', 'Тула'];
     })
 ;
 
