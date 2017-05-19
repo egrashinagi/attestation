@@ -7,5 +7,8 @@ angular
             .warnPalette('deep-orange')
             .backgroundPalette('blue-grey')
     })
+    .controller('myChips', function () {
+        this.myItems = ['Москва', 'Питер', 'Балашиха'];
+    })
 ;
 

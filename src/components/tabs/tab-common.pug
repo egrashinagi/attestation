@@ -5,24 +5,7 @@ md-tab(label="Главное" flex layout="column" )
 
         md-input-container
             input(placeholder='Описание', value='Подробное описание задания')
-        span Варианты ответов:
-        md-content
-            md-chips.md-chips
-                md-chip Москва
-                    md-icon
-                        i.material-icons close
-                md-chip Ижевск
-                    md-icon
-                        i.material-icons close
-                md-chip Урюпинск
-                    md-icon
-                        i.material-icons close
-                md-chip Актобе
-                    md-icon
-                        i.material-icons close
-                md-chip Новороссийск
-                    md-icon
-                        i.material-icons close
 
+        include ../chips/chips
 
         include ../file-uploader/file-uploader
