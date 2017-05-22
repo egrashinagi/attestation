@@ -5,5 +5,5 @@ mixin header(title, icon, hasclose)
             md-icon.material-icons.header__icons= icon
         if(hasclose)
             .header__close
-                md-button.md-fab.md-mini
+                md-button.md-fab.md-mini(ng-click="$ctrl.closeAll()")
                     md-icon close

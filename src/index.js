@@ -10,5 +10,7 @@ angular
     .controller('myChips', function () {
         this.myItems = ['Москва', 'Санкт-Петербург', 'Балашиха', 'Самара', 'Тула'];
     })
+
+    .controller('(ng-click="$ctrl.removeAll()")')
 ;
 
