@@ -1,3 +1,41 @@
-//
-   Created by egrashina.gi on 22.05.17.
+.page-container
+    table.my-table
+        thead
+            tr(md-colors={background: 'primary-400'})
+                th Наименование
+                th Описание
+                th Время
+                th теги
+                th Действия
 
+        tbody
+            - var x = 0;
+            while (x++ < 25)
+                tr
+                    td.left Газоанализаторы
+                    td тест поиска лица по видео
+                    td 05:00
+                    td тест; газ; газоанализатор; видео; лицо;
+                    td
+                        md-button.md-icon-button
+                            i.material-icons edit
+                        md-button.md-icon-button
+                            i.material-icons delete_forever
+
+            tr
+                td.left
+                    md-input-container
+                        input(placeholder='Наименование')
+                td
+                    md-input-container
+                        input(placeholder='Время')
+                td
+                    md-input-container
+                        input(placeholder='Описание')
+                td
+                    md-input-container
+                        input(placeholder='Теги')
+                td
+                    .footer__add
+                        md-button.md-fab.md-mini
+                            md-icon add

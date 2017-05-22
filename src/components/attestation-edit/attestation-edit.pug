@@ -1,0 +1,113 @@
+.page-container.page-container_margined
+    md-tabs.tabs(flex layout="column" layout-fill)
+        md-tab(label="Главное" flex layout="column" )
+            .tabs__item
+                md-input-container
+                    input(placeholder='Наименование', value='Газоанализаторы')
+
+                span Каталог/аттестация:
+                md-select(ng-model="size")
+                    md-option(ng-value="0") Воздушный транспорт
+                    md-option(ng-value="10") Железнодорожный транспорт
+                    md-option(ng-value="20") Морской транспорт
+                md-input-container
+                    input(placeholder='Примечание')
+
+            table.my-table
+
+                thead
+                    tr(md-colors={background: 'primary-300'})
+                        th №
+                        th Название
+                        th Тип
+                        th Ссылка
+                        th Категория
+                        th Действия
+
+                tbody
+                    tr
+                        td 1
+                        td.left Газоанализаторы
+                        td Тест
+                        td Газоанализаторы
+                        td Практическая часть
+                        td
+                            md-button.md-icon-button
+                                i.material-icons edit
+                            md-button.md-icon-button
+                                i.material-icons delete_forever
+
+                    tr
+                        td 2
+                        td.left Методика 'Память на лица'
+                        td Тест
+                        td Методика 'Память на лица'
+                        td Практическая часть
+                        td
+                            md-button.md-icon-button
+                                i.material-icons edit
+                            md-button.md-icon-button
+                                i.material-icons delete_forever
+                    tr
+                        td 3
+                        td.left Методика 'Красно-Черная таблица'
+                        td Тест
+                        td Методика 'Красно-Черная таблица'
+                        td Практическая часть
+                        td
+                            md-button.md-icon-button
+                                i.material-icons edit
+                            md-button.md-icon-button
+                                i.material-icons delete_forever
+
+                    tr(md-colors={background: 'primary-100'})
+                        td
+                            md-input-container
+                                input(placeholder='№')
+                        td.left
+                            md-input-container
+                                input(placeholder='Название')
+                        td
+                            md-input-container
+                                input(placeholder='Тип')
+                        td
+                            md-input-container
+                                input(placeholder='Ссылка')
+
+                        td
+                            md-input-container
+                                input(placeholder='Категория')
+                        td
+                            md-button.md-fab.md-mini
+                                md-icon add
+
+        md-tab(label="Оценивание")
+            .tabs__item
+
+                span Шкала оценок аттестации:
+                md-select(ng-model="size")
+                    md-option(ng-value="1") 1
+                    md-option(ng-value="2") 2
+                    md-option(ng-value="3") 3
+
+                span Шкала оценок теоретической части:
+                md-select(ng-model="size")
+                    md-option(ng-value="4") 4
+                    md-option(ng-value="5") 5
+                    md-option(ng-value="6") 6
+
+                span Шкала оценок практической части:
+                md-select(ng-model="size")
+                    md-option(ng-value="7") 7
+                    md-option(ng-value="8") 8
+                    md-option(ng-value="9") 9
+
+                span Шкала оценок тематической части:
+                md-select(ng-model="size")
+                    md-option(ng-value="10") 10
+                    md-option(ng-value="11") 11
+                    md-option(ng-value="12") 12
+
+.tabs__item-buttons
+    md-button.md-primary.md-raised.md-warn(ng-click="showListBottomSheet()") Отменить
+    md-button.md-primary.md-raised(ng-click="showListBottomSheet()") Сохранить
