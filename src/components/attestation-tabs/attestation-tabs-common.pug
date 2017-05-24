@@ -35,29 +35,6 @@ md-tab(label="Главное" flex layout="column" )
                     md-button.md-icon-button
                         i.material-icons delete_forever
 
-            tr
-                td 2
-                td.left Методика "Память на лица"
-                td Тест
-                td Методика "Память на лица"
-                td Практическая часть
-                td
-                    md-button.md-icon-button
-                        i.material-icons edit
-                    md-button.md-icon-button
-                        i.material-icons delete_forever
-            tr
-                td 3
-                td.left Методика "Красно-Чёрная таблица"
-                td Тест
-                td Методика "Красно-Чёрная таблица"
-                td Практическая часть
-                td
-                    md-button.md-icon-button
-                        i.material-icons edit
-                    md-button.md-icon-button
-                        i.material-icons delete_forever
-
             tr(md-colors={background: 'primary-100'})
                 td
                     md-input-container
@@ -78,3 +55,6 @@ md-tab(label="Главное" flex layout="column" )
                 td
                     md-button.md-fab.md-mini
                         md-icon add
+
+    .bottom-sheet-demo.inset(layout="row" layout-sm="column" layout-align="center")
+        md-button(flex="100%" class="md-primary md-raised" ng-click="showListBottomSheet()") Добавить тест
