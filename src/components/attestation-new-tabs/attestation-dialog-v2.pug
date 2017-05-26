@@ -1,0 +1,28 @@
+.tabs__item
+
+    md-input-container
+        input(placeholder='№')
+
+    md-input-container
+        input(placeholder='Название')
+
+    md-input-container
+        input(placeholder='Тип')
+
+    md-input-container
+        input(placeholder='Ссылка')
+
+    md-select(ng-model="size")
+        md-option(ng-value="0")
+        md-option(ng-value="1") Практическая часть
+        md-option(ng-value="10") Тематическая часть
+        md-option(ng-value="20") Теоретическая часть
+
+    md-select(ng-model="size")
+        md-option(ng-value="0") Воздушный транспорт
+        md-option(ng-value="1") Морской транспорт
+        md-option(ng-value="2") Железнодорожный транспорт
+        md-option(ng-value="3") Дорожное хозяйство
+
+.bottom-sheet-demo.inset(layout="row" layout-sm="column" layout-align="center")
+    md-button(flex="100%" class="md-primary md-raised" ng-click="showListBottomSheet()") Добавить тест
