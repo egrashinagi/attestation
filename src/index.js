@@ -12,5 +12,5 @@ angular
     })
 
     .controller('(ng-click="$ctrl.removeAll()")')
-;
 
+;
