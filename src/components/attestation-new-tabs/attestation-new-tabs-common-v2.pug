@@ -1,0 +1,16 @@
+md-tab(label="Главное" flex layout="column" )
+    .tabs__item
+        md-input-container
+            input(placeholder='Наименование')
+
+        span Каталог/аттестация:
+        md-select(ng-model="size")
+            md-option(ng-value="0") Воздушный транспорт
+            md-option(ng-value="10") Железнодорожный транспорт
+            md-option(ng-value="20") Морской транспорт
+            md-option(ng-value="30") Создать новый каталог (аттестацию)
+        md-input-container
+            input(placeholder='Примечание')
+
+    .bottom-sheet-demo.inset(layout="row" layout-sm="column" layout-align="left")
+        md-button(flex="25" class="md-primary md-raised" ng-click="showListBottomSheet()") Добавить тест

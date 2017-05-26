@@ -1,0 +1,9 @@
+.page-container.page-container_margined
+    md-tabs.tabs(flex layout="column" layout-fill)
+
+        include attestation-new-tabs-common-v2
+        include attestation-new-tabs-other-v2
+
+.tabs__item-buttons
+    md-button.md-primary.md-raised.md-warn(ng-click="showListBottomSheet()") Отменить
+    md-button.md-primary.md-raised(ng-click="showListBottomSheet()") Сохранить
