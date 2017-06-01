@@ -9,23 +9,27 @@ html
         link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
         link(rel='stylesheet' href='styles.css')
 
-    body(ng-app='MyApp')
+    body(ng-app='MyApp', ng-controller="indexController")
         +header('Главная страница')
 
         md-list
             md-subheader.md-no-sticky Доступные страницы
-            md-list-item
-                h3 Список вопросов
-                a(href="questions.html" target="_blank") Открыть
-            md-list-item
-                h3 Шкалы
-                a(href="scale.html" target="_blank") Открыть
-            md-list-item
-                h3 Шкалы - диалог редактирования
-                a(href="scale-edit.html" target="_blank") Открыть
-            md-list-item
-                h3 Задание на выбор ответа
-                a(href="dialog.html" target="_blank") Открыть
+
+            md-list-item.md-3-line(ng-click="open('questions.html')")
+                h4 Список вопросов
+
+            md-list-item.md-3-line(ng-click="open('dialog.html')")
+                h4 Задание на выбор ответа
+
+            md-list-item.md-3-line(ng-click="open('scale.html')")
+                h4 Шкалы
+
+            md-list-item.md-3-line(ng-click="open('scale-edit.html')")
+                h4 Шкалы - диалог редактирования
+
+
+            md-list-item.md-3-line(ng-click="open('attestation.html')")
+                h4 Аттестационные билеты
 
         script(src="vendor.js")
         script(src="index.js")
