@@ -11,6 +11,10 @@ md-tab(label="Главное" flex layout="column" )
         md-input-container
             input(placeholder='Примечание')
 
+    md-button.md-fab.md-mini(ng-click="open('test-list.html')")
+        md-tooltip Добавить тест
+        md-icon add
+
     table.my-table
 
         thead
@@ -20,7 +24,7 @@ md-tab(label="Главное" flex layout="column" )
                 th Тип
                 th Ссылка
                 th Категория
-                th Действия
+                th Действие
 
         tbody
             tr
@@ -28,33 +32,11 @@ md-tab(label="Главное" flex layout="column" )
                 td.left Газоанализаторы
                 td Тест
                 td Газоанализаторы
-                td Практическая часть
                 td
-                    md-button.md-icon-button
-                        i.material-icons edit
+                    md-select(ng-model="size" placeholder='Категория')
+                        md-option(ng-value="4") Практическая
+                        md-option(ng-value="5") Тематическая
+                        md-option(ng-value="6") Теоретическая
+                td
                     md-button.md-icon-button
                         i.material-icons delete_forever
-
-            tr(md-colors={background: 'primary-100'})
-                td
-                    md-input-container
-                        input(placeholder='№')
-                td.left
-                    md-input-container
-                        input(placeholder='Название')
-                td
-                    md-input-container
-                        input(placeholder='Тип')
-                td
-                    md-input-container
-                        input(placeholder='Ссылка')
-
-                td
-                    md-input-container
-                        input(placeholder='Категория')
-                td
-                    md-button.md-fab.md-mini
-                        md-icon add
-
-    .bottom-sheet-demo.inset(layout="row" layout-sm="column" layout-align="center")
-        md-button(flex="100%" class="md-primary md-raised" ng-click="showListBottomSheet()") Добавить тест

@@ -21,35 +21,18 @@ md-tab(label="Главное" flex layout="column" )
                 th Тип
                 th Ссылка
                 th Категория
-                th Выбрать аттестационный материал
+                th Действие
 
         tbody
-            tr(md-colors={background: 'primary-100'})
+            tr
+                td 1
+                td.left Газоанализаторы
+                td Тест
+                td Газоанализаторы
+                td Практическая часть
                 td
-                    md-input-container
-                        input(placeholder='№')
-                td.left
-                    md-input-container
-                        input(placeholder='Название')
-                td
-                    md-input-container
-                        input(placeholder='Тип')
-                td
-                    md-input-container
-                        input(placeholder='Ссылка')
-
-                td
-                    md-select(ng-model="size")
-                        md-option(ng-value="1") Практическая часть
-                        md-option(ng-value="10") Тематическая часть
-                        md-option(ng-value="20") Теоретическая часть
-
-                td
-                    md-select(ng-model="size")
-                        md-option(ng-value="0") Воздушный транспорт
-                        md-option(ng-value="1") Морской транспорт
-                        md-option(ng-value="2") Железнодорожный транспорт
-                        md-option(ng-value="3") Дорожное хозяйство
+                    md-button.md-icon-button
+                        i.material-icons delete_forever
 
     .bottom-sheet-demo.inset(layout="row" layout-sm="column" layout-align="center")
-            md-button.md-primary.md-raised(flex="100%") Сохранить тест
+            md-button.md-primary.md-raised(flex="100%") Добавить тест
