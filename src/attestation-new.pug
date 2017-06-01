@@ -10,7 +10,7 @@ head
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
     link(rel='stylesheet' href='styles.css')
 
-body(ng-app='MyApp')
+body(ng-app='MyApp', ng-controller="indexController")
     +header('Создать новый билет','add_box', true)
     include components/attestation-new-tabs/attestation-new-tabs
 
