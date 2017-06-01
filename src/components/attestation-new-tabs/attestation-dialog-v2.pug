@@ -12,17 +12,16 @@
     md-input-container
         input(placeholder='Ссылка')
 
-    md-select(ng-model="size")
-        md-option(ng-value="0")
+    md-select(ng-model="size" placeholder='Категория')
         md-option(ng-value="1") Практическая часть
         md-option(ng-value="10") Тематическая часть
         md-option(ng-value="20") Теоретическая часть
 
-    md-select(ng-model="size")
+    md-select(ng-model="size" placeholder='Выберите материал')
         md-option(ng-value="0") Воздушный транспорт
         md-option(ng-value="1") Морской транспорт
         md-option(ng-value="2") Железнодорожный транспорт
         md-option(ng-value="3") Дорожное хозяйство
 
 .bottom-sheet-demo.inset(layout="row" layout-sm="column" layout-align="center")
-    md-button(flex="100%" class="md-primary md-raised" ng-click="showListBottomSheet()") Добавить тест
+    md-button.md-primary.md-raised(flex="25%" ng-click="close()") Сохранить
