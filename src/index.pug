@@ -12,33 +12,33 @@ html
     body(ng-app='MyApp', ng-controller="indexController")
         +header('Главная страница')
 
-        md-list
+        md-list.main-menu
             md-subheader.md-no-sticky Доступные страницы
 
             md-list-item.md-3-line(ng-click="open('questions.html')")
-                h4 Список вопросов
+                h4 Список заданий (вопросов)
 
-            md-list-item.md-3-line(ng-click="open('dialog.html')")
-                h4 Задание на выбор ответа
+            md-list-item.md-3-line(ng-click="open('questions-edit.html')")
+                h4 Задание на выбор ответа - диалог редактирования
 
             md-list-item.md-3-line(ng-click="open('scale.html')")
                 h4 Шкалы
 
             md-list-item.md-3-line(ng-click="open('scale-edit.html')")
-                h4 Шкалы - диалог редактирования
+                h4 Шкалы. Диалог редактирования
 
 
             md-list-item.md-3-line(ng-click="open('attestation.html')")
-                h4 Аттестационные билеты
-
-            md-list-item.md-3-line(ng-click="open('attestation-edit.html')")
-                h4 Редактировать аттестацию
-
-            md-list-item.md-3-line(ng-click="open('attestation-new-v2.html')")
-                h4 Создать новый билет - версия 2
+                h4 Аттестация (Список билетов)
 
             md-list-item.md-3-line(ng-click="open('attestation-new.html')")
                 h4 Создать новый билет
+
+            md-list-item.md-3-line(ng-click="open('attestation-new-v2.html')")
+                h4 Создать новый билет (Версия 2)
+
+            md-list-item.md-3-line(ng-click="open('attestation-edit.html')")
+                h4 Редактировать аттестацию (уже имеющийся билет)
 
             md-list-item.md-3-line(ng-click="open('attestation-dialog-v2.html')")
                 h4 Добавить тест
