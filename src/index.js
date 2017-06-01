@@ -7,10 +7,15 @@ angular
             .warnPalette('deep-orange')
             .backgroundPalette('blue-grey')
     })
-    .controller('myChips', function () {
-        this.myItems = ['Москва', 'Санкт-Петербург', 'Балашиха', 'Самара', 'Тула'];
-    })
 
-    .controller('(ng-click="$ctrl.removeAll()")')
+    .controller('myChips', ['$scope', ($scope) => {
+        $scope.myItems = ['Москва', 'Санкт-Петербург', 'Балашиха', 'Самара', 'Тула'];
+    }])
+
+    .controller('indexController', ['$scope', '$window', ($scope, $window) => {
+        $scope.open = (name) => {
+            $window.open(name, '_blank');
+        };
+    }])
 
 ;
