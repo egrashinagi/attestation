@@ -1,0 +1,21 @@
+.page-container
+    table.my-table
+        thead
+            tr(md-colors={background: 'primary-400'})
+                th Наименование
+                th Описание
+                th Теги
+                th Действия
+
+        tbody
+            - var x = 0;
+            while (x++ < 25)
+                tr
+                    td.left Железнодорожный транспорт
+                    td тест
+                    td транспорт
+
+                    td
+                        md-button.md-icon-button
+                            md-tooltip Выбрать
+                            i.material-icons add
