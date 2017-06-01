@@ -1,18 +1,31 @@
 include components/header/header
 
 doctype html
-head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no")
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no")
 
-    title Attestation
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+        link(rel='stylesheet' href='styles.css')
 
-    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-    link(rel='stylesheet' href='styles.css')
+    body(ng-app='MyApp')
+        +header('Главная страница')
 
-body(ng-app='MyApp')
-    +header('Задания на выбор ответа','pan_tool', true)
-    include components/text-questions-list/text-questions-list
+        md-list
+            md-subheader.md-no-sticky Доступные страницы
+            md-list-item
+                h3 Список вопросов
+                a(href="questions.html" target="_blank") Открыть
+            md-list-item
+                h3 Шкалы
+                a(href="scale.html" target="_blank") Открыть
+            md-list-item
+                h3 Шкалы - диалог редактирования
+                a(href="scale-edit.html" target="_blank") Открыть
+            md-list-item
+                h3 Задание на выбор ответа
+                a(href="dialog.html" target="_blank") Открыть
 
-    script(src="vendor.js")
-    script(src="index.js")
+        script(src="vendor.js")
+        script(src="index.js")
