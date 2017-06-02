@@ -1,0 +1,23 @@
+.page-container
+    table.my-table
+        thead
+        caption ТЕСТ
+            tr(md-colors={background: 'primary-400'})
+                th Наименование
+                th Описание
+                th Теги
+                th Действия
+                    md-button.md-icon-button(ng-click="open('test-new.html')")
+                        md-tooltip Создать новый тест
+                        i.material-icons pan_tool
+
+        tbody
+            tr
+                td.left Тематика с тегами
+                td аттестационный материал
+                td транспорт
+
+                td
+                    md-button.md-icon-button.md-fab.md-mini
+                        md-tooltip Выбрать
+                        i.material-icons add
