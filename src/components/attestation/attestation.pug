@@ -11,7 +11,7 @@
 
         tbody
             - var x = 0;
-                while (x++ < 25)
+                while (x++ < 15)
                     tr
                         td= x + '.'
                         td.left Газоанализаторы
@@ -25,23 +25,24 @@
                                 i.material-icons delete_forever
 
             tr
-                td
-                    md-input-container
-                        input(placeholder='№')
 
-                td.left
-                    md-input-container
-                        input(placeholder='Наименование')
+
                 td
-                    md-input-container
-                        input(placeholder='Время')
+
                 td
-                    md-input-container
-                        input(placeholder='Описание')
+
                 td
-                    md-input-container
-                        input(placeholder='Теги')
+                    span.md-title Создать
+                td
+                    md-select(ng-model="size" placeholder='Каталог/аттестация')
+                        md-option(ng-value="4") Каталог
+                        md-option(ng-value="5") Аттестация знаний, умений и навыков
+                        md-option(ng-value="6") Аттестация личностных (психофизиологических качеств)
+                        md-option(ng-value="6") Аттестация уровня физической подготовки
+
                 td
                     .footer__add
-                        md-button.md-fab.md-mini
+                        md-button.md-fab.md-mini(ng-click="open('attestation-new.html')")
                             md-icon add
+
+                td
