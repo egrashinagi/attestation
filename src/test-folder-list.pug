@@ -5,17 +5,14 @@ head
     meta(charset="UTF-8")
     meta(name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no")
 
-    title Выбор теста
+    title Выбор аттестационного материала
 
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
     link(rel='stylesheet' href='styles.css')
 
 body(ng-app='MyApp', ng-controller="indexController")
-    +header('Выбрать тест','add_box', true)
-
-    include components/test-list/test-list-zd
-    include components/test-list/test-list-flags-rc
-    include components/test-list/test-list-flags-new-player
+    +header('Выбрать аттестационный материал','add_box', true)
+    include components/test-folder-list/test-folder-list
 
     script(src="vendor.js")
     script(src="index.js")
