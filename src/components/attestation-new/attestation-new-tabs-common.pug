@@ -9,6 +9,8 @@ md-tab(label="Главное" flex layout="column" )
             md-option(ng-value="10") Железнодорожный транспорт
             md-option(ng-value="20") Морской транспорт
             md-option(ng-value="30") Создать новый каталог (аттестацию)
+                md-button.md-fab.md-mini(ng-click="open('catalog.html')")
+                    md-icon add
         md-input-container
             input(placeholder='Примечание')
 

@@ -1,0 +1,95 @@
+.page-container.page-container_margined
+    md-tabs.tabs(flex layout="column" layout-fill)
+
+        md-tab(label="Главное" flex layout="column" )
+            .tabs__item
+                md-input-container
+                    input(placeholder='Наименование')
+                md-input-container
+                    input(placeholder='Примечание')
+                md-select(ng-model="size" placeholder='Организация')
+                    md-option(ng-value="0") Автодор
+                    md-option(ng-value="10") 1С
+                    md-option(ng-value="20") ООО НПЦ
+        md-tab(label="Оценивание")
+            .tabs__item
+
+                span Шкала оценок аттестации:
+                md-select(ng-model="size")
+                    md-option(ng-value="1") 5-я Шкала
+                    md-option(ng-value="2") Аттестация
+                    md-option(ng-value="3") Практическая часть
+                    md-option(ng-value="1") Тематическая часть
+                    md-option(ng-value="2") Теоретическая часть
+                    md-option(ng-value="3") ПФД
+                    md-option(ng-value="1") Самооценка
+                    md-option(ng-value="2") Произвольная память
+                    md-option(ng-value="1") 5-я Шкала
+                    md-option(ng-value="2") Аттестация
+                    md-option(ng-value="3") Практическая часть
+                    md-option(ng-value="1") Тематическая часть
+                    md-option(ng-value="2") Теоретическая часть
+                    md-option(ng-value="3") ПФД
+                    md-option(ng-value="1") Самооценка
+                    md-option(ng-value="2") Произвольная память
+
+                span Шкала оценок теоретической части:
+                md-select(ng-model="size")
+                    md-option(ng-value="1") 5-я Шкала
+                    md-option(ng-value="2") Аттестация
+                    md-option(ng-value="3") Практическая часть
+                    md-option(ng-value="1") Тематическая часть
+                    md-option(ng-value="2") Теоретическая часть
+                    md-option(ng-value="3") ПФД
+                    md-option(ng-value="1") Самооценка
+                    md-option(ng-value="2") Произвольная память
+                    md-option(ng-value="1") 5-я Шкала
+                    md-option(ng-value="2") Аттестация
+                    md-option(ng-value="3") Практическая часть
+                    md-option(ng-value="1") Тематическая часть
+                    md-option(ng-value="2") Теоретическая часть
+                    md-option(ng-value="3") ПФД
+                    md-option(ng-value="1") Самооценка
+                    md-option(ng-value="2") Произвольная память
+
+                span Шкала оценок практической части:
+                md-select(ng-model="size")
+                    md-option(ng-value="1") 5-я Шкала
+                    md-option(ng-value="2") Аттестация
+                    md-option(ng-value="3") Практическая часть
+                    md-option(ng-value="1") Тематическая часть
+                    md-option(ng-value="2") Теоретическая часть
+                    md-option(ng-value="3") ПФД
+                    md-option(ng-value="1") Самооценка
+                    md-option(ng-value="2") Произвольная память
+                    md-option(ng-value="1") 5-я Шкала
+                    md-option(ng-value="2") Аттестация
+                    md-option(ng-value="3") Практическая часть
+                    md-option(ng-value="1") Тематическая часть
+                    md-option(ng-value="2") Теоретическая часть
+                    md-option(ng-value="3") ПФД
+                    md-option(ng-value="1") Самооценка
+                    md-option(ng-value="2") Произвольная память
+
+                span Шкала оценок тематической части:
+                md-select(ng-model="size")
+                    md-option(ng-value="1") 5-я Шкала
+                    md-option(ng-value="2") Аттестация
+                    md-option(ng-value="3") Практическая часть
+                    md-option(ng-value="1") Тематическая часть
+                    md-option(ng-value="2") Теоретическая часть
+                    md-option(ng-value="3") ПФД
+                    md-option(ng-value="1") Самооценка
+                    md-option(ng-value="2") Произвольная память
+                    md-option(ng-value="1") 5-я Шкала
+                    md-option(ng-value="2") Аттестация
+                    md-option(ng-value="3") Практическая часть
+                    md-option(ng-value="1") Тематическая часть
+                    md-option(ng-value="2") Теоретическая часть
+                    md-option(ng-value="3") ПФД
+                    md-option(ng-value="1") Самооценка
+                    md-option(ng-value="2") Произвольная память
+
+.tabs__item-buttons
+    md-button.md-primary.md-raised.md-warn(ng-click="close()") Отменить
+    md-button.md-primary.md-raised(ng-click="close()") Сохранить

@@ -18,9 +18,6 @@ angular
         $scope.close = (name) => {
             $window.close();
 
-        button.onclick = function() {
-            alert( 'Добавлено!' );
-        };
         };
     }])
 ;
