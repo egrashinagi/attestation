@@ -8,7 +8,7 @@
                 th теги
                 th Дополнительно
                 th Действия
-                    md-button.md-fab.md-mini
+                    md-button.md-fab.md-mini(ng-click="open('scale-new.html')")
                         md-tooltip Добавить шкалу оценивания
                         md-icon add
 
@@ -30,22 +30,3 @@
                         md-button.md-icon-button(ng-click='addScale(' + x + ')')
                             md-tooltip Выбрать
                             i.material-icons add
-
-            tr
-                td.left
-                    md-input-container
-                        input(placeholder='Наименование')
-                td
-                    md-input-container
-                        input(placeholder='Описание')
-                td
-                    md-input-container
-                        input(placeholder='Теги')
-                td
-                    md-input-container
-                        input(placeholder='Дополнительно')
-                td
-                    .footer__add
-                        md-button.md-fab.md-mini
-                            md-tooltip Добавить
-                            md-icon add
