@@ -15,9 +15,12 @@ angular
         $scope.open = (name) => {
             $window.open(name, '_blank');
         };
-        $scope.close = (name) => {
+        $scope.close = () => {
             $window.close();
-
         };
+
+        $scope.addScale = (x) => {
+            alert(`Выбрана шкала ${x}!`)
+        }
     }])
 ;
