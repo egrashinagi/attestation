@@ -1,0 +1,13 @@
+.page-container.page-container_margined
+    .tabs__item
+        md-input-container
+            input(placeholder='Название')
+
+        md-input-container
+            input(placeholder='Количество опасных предметов (максимум 10) (0-10):')
+
+.tabs__item-buttons
+    md-button.md-primary.md-raised.md-warn(ng-click="close()") Отменить
+    md-button.md-primary.md-raised(ng-click="close()") Сохранить
+
+
