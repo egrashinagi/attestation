@@ -1,0 +1,46 @@
+include ../../components/chips/chips
+
+.page-container.page-container_margined
+    md-tabs.tabs(flex layout="column" layout-fill)
+
+        md-tab(label="Основное" flex layout="column" )
+            .tabs__item
+                md-input-container
+                    input(placeholder='Название')
+
+                md-input-container
+                    input(placeholder='Описание')
+
+                md-input-container
+                    input(placeholder='Цена задания')
+
+                +my-chips('Добавить тег:')
+
+                md-input-container
+                    input(placeholder='Время')
+
+        md-tab(label="Вопросы")
+            .tabs__item
+                md-input-container
+                    input(placeholder='Время показа изображения (сек.)')
+
+                md-input-container
+                    input(placeholder='Время на ответ (сек.)')
+
+                md-input-container
+                    input(placeholder='Общее время на задание (сек.)')
+
+                md-input-container
+                    input(placeholder='Вопрос')
+                    md-button.md-primary(ng-click="close()") Добавить вопрос
+                    md-button.md-primary(ng-click="close()") Удалить
+
+        md-tab(label="Изображение" flex layout="column" )
+            md-input-container
+                input(placeholder='Название')
+                md-button.md-primary(ng-click="close()") Добавить изображение
+                md-button.md-primary(ng-click="close()") Удалить
+
+.tabs__item-buttons
+    md-button.md-primary.md-raised.md-warn(ng-click="close()") Отменить
+    md-button.md-primary.md-raised(ng-click="close()") Сохранить
