@@ -10,7 +10,7 @@ angular
 
     .controller('indexController', ['$scope', '$window', ($scope, $window) => {
 
-        $scope.myItems = ['Москва', 'Санкт-Петербург', 'Балашиха', 'Самара', 'Тула'];
+        $scope.myItems = [];
 
         $scope.open = (name) => {
             $window.open(name, '_blank');
