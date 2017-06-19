@@ -5,15 +5,15 @@ head
     meta(charset="UTF-8")
     meta(name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no")
 
-    title Задания Красно-Черные таблицы
+    title Задания Шульте
 
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
     link(rel='stylesheet' href='styles.css')
 
 body(ng-app='MyApp', ng-controller="indexController")
-    +header('Создать задание Красно-Черные таблицы','add_box', true)
+    +header('Создать задание Шульте','add_box', true)
 
-    include components/red-black-tables/red-black-tables
+    include components/task-schulte/task-schulte
 
     script(src="vendor.js")
     script(src="index.js")
