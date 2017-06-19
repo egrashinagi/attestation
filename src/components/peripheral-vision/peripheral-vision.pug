@@ -1,0 +1,28 @@
+.page-container.page-container_margined
+    md-tabs.tabs(flex layout="column" layout-fill)
+        md-tab(label="Главное" flex layout="column" )
+            .tabs__item
+                md-input-container
+                    input(placeholder='Текст задания')
+
+                md-input-container
+                    input(placeholder='Подробное описание задания')
+
+                include ../file-uploader/file-uploader
+        md-tab(label="Дополнительно")
+            .tabs__item
+                md-input-container
+                    input(placeholder='Время показа изображения (сек.):' value='0')
+                md-input-container
+                    input(placeholder='Время на ответ (сек.):' value='0')
+                md-input-container
+                    input(placeholder='Время показа изображения (сек.):' value='0')
+                .tabs__item-buttons
+                    md-button.md-primary(ng-click="close()") Добавить вопрос
+                    md-button.md-primary(ng-click="close()") Удалить
+                md-input-container
+                    input(placeholder='Вопрос')
+
+.tabs__item-buttons
+    md-button.md-primary.md-raised.md-warn(ng-click="close()") Отменить
+    md-button.md-primary.md-raised(ng-click="close()") Сохранить
