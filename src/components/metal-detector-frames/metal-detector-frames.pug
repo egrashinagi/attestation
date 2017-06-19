@@ -1,0 +1,30 @@
+.page-container.page-container_margined
+    .tabs__item
+        md-input-container
+            input(placeholder='Название')
+
+        md-input-container
+            input(placeholder='Количество вопросов')
+
+
+        .frames-type
+            .frames-type__list
+                span.md-title.tabs__item-title Рамки
+                md-radio-group
+                    md-radio-button Рубикон
+                    md-radio-button SVP
+                    md-radio-button Обертон
+                    md-radio-button Ceia
+                    md-radio-button SmartScan
+            .frames-type__list
+                span.md-title.tabs__item-title Ручной детектор
+                md-radio-group
+                    md-radio-button Рубикон
+                    md-radio-button SVP
+                    md-radio-button Обертон
+                    md-radio-button Ceia
+                    md-radio-button SmartScan
+
+.tabs__item-buttons
+    md-button.md-primary.md-raised.md-warn(ng-click="close()") Отменить
+    md-button.md-primary.md-raised(ng-click="close()") Сохранить

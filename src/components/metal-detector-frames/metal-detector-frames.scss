@@ -1,0 +1,12 @@
+.frames-type {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
