@@ -85,6 +85,9 @@
                         input(placeholder='Значение')
                 td
                     md-select(ng-model="size")
+                    - var x = 0;
+                        while (x++ < 25)
+
                         md-option(ng-value="0") 0
                         md-option(ng-value="10") 10
                         md-option(ng-value="20") 20

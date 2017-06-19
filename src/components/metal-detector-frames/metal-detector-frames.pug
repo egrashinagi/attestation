@@ -3,9 +3,10 @@
         md-input-container
             input(placeholder='Название')
 
-        md-input-container
-            input(placeholder='Количество вопросов')
-
+        md-select(ng-model="size"  placeholder='Количество вопросов')
+            - var x = 0;
+                while (x++ <200)
+                md-option(ng-value="0")=x++
 
         .frames-type
             .frames-type__list
