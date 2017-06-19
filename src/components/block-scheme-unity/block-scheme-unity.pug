@@ -1,0 +1,14 @@
+.page-container.page-container_margined
+    .tabs__item
+        md-input-container
+            input(placeholder='Название')
+
+        span.md-title.tabs__item-title Тип вопроса:
+        md-radio-group
+            md-radio-button Пустая диаграмма
+            md-radio-button Подписанные блоки
+            md-radio-button Доработка диаграммы
+
+.tabs__item-buttons
+    md-button.md-primary.md-raised.md-warn(ng-click="close()") Отменить
+    md-button.md-primary.md-raised(ng-click="close()") Сохранить
