@@ -21,8 +21,6 @@
 
     padding: 3px;
 
-    //color: #747474;
-    //background-color: #DCDCDC;
     text-shadow: #A8A8A8 2px;
   }
 
@@ -45,6 +43,7 @@
   }
 
   .file-uploader__form-label {
+    width: 100%;
     margin: 0 10px;
     min-width: 200px;
     min-height: 20px;

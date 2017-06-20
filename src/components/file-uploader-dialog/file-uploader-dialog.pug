@@ -1,0 +1,37 @@
+.file-uploader-dialog
+
+    md-input-container
+        input(placeholder='Название файла')
+
+    .file-uploader-dialog__header.md-headline
+        span Выбрать файл
+
+    .file-uploader-dialog__form
+        md-button.md-fab.md-mini.file-uploader-dialog__button(onclick="document.querySelector('.file-uploader-dialog__input').click()")
+            md-icon.material-icons file_upload
+            input.file-uploader-dialog__input(type='file')
+        .file-uploader-dialog__form-label
+
+    .file-uploader-dialog__actions
+        md-button.md-raised.md-primary(ng-click="close()") Загрузить
+
+    .page-container
+        table.my-table
+            thead
+                tr(md-colors={background: 'primary-400'})
+                    th(width="5%") №
+                    th Наименование
+                    th Действия
+
+            tbody
+                - var x = 0;
+                    while (x++ < 5)
+                        tr
+                            td= x + '.'
+                            td.left ПОТБ Автовокзал
+                            td
+                                md-button.md-icon-button
+                                    i.material-icons edit
+                                md-button.md-icon-button
+                                    i.material-icons delete_forever
+

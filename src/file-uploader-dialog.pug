@@ -1,0 +1,20 @@
+include components/header/header
+
+doctype html
+head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no")
+
+    title Добавить файл
+
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    link(rel='stylesheet' href='styles.css')
+
+body(ng-app='MyApp', ng-controller="indexController")
+    +header('Добавить файл','create_new_folder', true)
+
+    include components/file-uploader-dialog/file-uploader-dialog
+
+    script(src="vendor.js")
+    script(src="index.js")
+

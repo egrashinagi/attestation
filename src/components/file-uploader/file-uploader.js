@@ -6,7 +6,7 @@ function getName(str, label) {
     else {
         i = str.lastIndexOf('/') + 1;
     }
-    // var label = document.querySelector('.file-uploader__label');
+    var label = document.querySelector('.file-uploader__label');
     label.innerHTML = str.slice(i);
 }
 
