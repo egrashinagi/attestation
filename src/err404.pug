@@ -1,0 +1,30 @@
+include components/header/header
+
+doctype html
+head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no")
+
+    title 404 ошибка
+
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    link(rel='stylesheet' href='styles.css')
+    link(rel='stylesheet' href='err404.css')
+    script(src="https://cdn.anychart.com/js/latest/graphics.min.js")
+
+
+body(ng-app='MyApp', ng-controller="indexController")
+    +header('404 ошибка','error')
+
+    .err404
+
+        div(id='container')
+
+        .err404-title
+            span.err404-title__text Sorry, the page does not exist
+
+            span.err404-title__text 404 Error
+                i.material-icons record_voice_over
+
+    script(src="vendor.js")
+    script(src="index.js")
