@@ -1,0 +1,419 @@
+.menu
+    .index-menu-temp1
+        //Заглушка1 ==$0
+    .index-menu(ng-binding) tutor
+    .index-menu-temp2
+        //Заглушка2 ==$0
+    .index-menu-list
+        .index-menu__item Аттестация
+        .index-menu__item Оценивание
+        .index-menu__item Настройки
+        .index-menu__item Материалы
+    .index-menu-home
+        i.material-icons home
+        i.material-icons help
+    .index-menu-edit
+        i.material-icons exit_to_app
+
+.main-ui-view
+    .container__header
+        .container__header-title
+            h2 Оценивание
+        .attest-filter
+
+            .attest-filter__from($ctrl.from)
+                md-datepicker.ng-pristine.ng-untouched.ng-valid._md-datepicker-has-triangle-icon.ng-isolate-scope.md-Mint-theme.ng-valid-mindate.ng-valid-maxdate.ng-valid-filtered.ng-valid-valid.ng-not-empty(tabindex="-1" aria-owns="md-date-pane-0" type='date')
+            .attest-filter__to(ng-model="$ctrl.to")
+                md-datepicker.ng-pristine.ng-untouched.ng-valid._md-datepicker-has-triangle-icon.ng-isolate-scope.md-Mint-theme.ng-valid-mindate.ng-valid-maxdate.ng-valid-filtered.ng-valid-valid.ng-not-empty(tabindex="-1" aria-owns="md-date-pane-1" type="date" aria-invalid="false")
+
+
+            .attest-filter__name
+                md-input-container
+                    label УИН
+                    input(type='text').ng-pristine.ng-untouched.ng-valid.md-input.ng-empty
+            .attest-filter__group
+                md-input-container
+                    label группа
+                    input(type='text').ng-pristine.ng-untouched.ng-valid.md-input.ng-empty
+        button.md-button.md-Mint-theme.md-ink-ripple.container__header-button(type='button') Детализация
+        i.material-icons.container__header-print print
+    .container__content
+        .tabs
+            .tabs__item ПФД
+            .tabs__item ФП
+            .tabs__item ЗУН
+        .table
+            .table__header
+                .table__cell.table__cell_width-5pr №
+                .table__cell.table__cell_width-10pr УИН
+                    i.material-icons(role='button' tabindex='0') keyboard_arrow_right
+                .table__cell.table__cell_width-10pr Группа
+                    i.material-icons(role='button' tabindex='0') keyboard_arrow_right
+                .table__cell.table__cell_width-8pr Дата
+                    i.material-icons(role='button' tabindex='0') keyboard_arrow_right
+                .table__cell.table__cell_width-7pr Начало
+                    i.material-icons(role='button' tabindex='0') keyboard_arrow_right
+                .table__cell.table__cell_width-7pr Конец
+                    i.material-icons(role='button' tabindex='0') keyboard_arrow_right
+                .table__cell.table__cell_width-10pr Теория
+                    i.material-icons(role='button' tabindex='0') keyboard_arrow_right
+                .table__cell.table__cell_width-10pr Практика
+                    i.material-icons(role='button' tabindex='0') keyboard_arrow_right
+                .table__cell.table__cell_width-10pr Тематика
+                    i.material-icons(role='button' tabindex='0') keyboard_arrow_right
+                .table__cell.table__cell_width-10pr Общая
+                    i.material-icons(role='button' tabindex='0') keyboard_arrow_right
+
+            .table__content
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Не аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
+                .table__row.table__row_selected
+                    .table__cell.table__cell_width-5pr 920
+                    .table__cell.table__cell_width-10pr NIGMA
+                    .table__cell.table__cell_width-10pr Group
+                    .table__cell.table__cell_width-8pr 26-06-2017
+                    .table__cell.table__cell_width-7pr 10:20:04
+                    .table__cell.table__cell_width-7pr 10:20:05
+                    .table__cell.table__cell_width-10pr 0
+                    .table__cell.table__cell_width-10pr 129
+                    .table__cell.table__cell_width-10pr 123
+                    .table__cell.table__cell_width-10pr Аттестован
